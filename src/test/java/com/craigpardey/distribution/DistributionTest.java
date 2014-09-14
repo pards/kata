@@ -4,23 +4,21 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-
-import com.craigpardey.distribution.Distribution;
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class DistributionTest {
 	
 	Distribution fixture;
 
-	@Before
+	@BeforeMethod
 	public void setUp() {
 		fixture = new Distribution();
 	}
 	
-	@After
+	@AfterMethod
 	public void tearDown() {
 		fixture = null;
 	}
